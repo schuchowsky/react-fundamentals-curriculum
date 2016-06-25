@@ -3,6 +3,7 @@
 React.js Fundamentals Curriculum
 ========
 
+<<<<<<< HEAD
 ####For more information on React.js Program, [click here](http://reactjsprogram.com)
 
 ##Objective
@@ -13,6 +14,10 @@ The goal here is to give you just enough guidance for you to struggle without dr
 
 ##Step 0: Examine the Final Product
  * Head over [HERE](http://www.reactjsprogram.com/React-Fundamentals-Project) and play around with the final project. Think about how you would separate your different components and functionality.
+=======
+##Objective
+Build a functioning Weather app using the [Open Weather API](http://openweathermap.org/api).
+>>>>>>> step1
 
 ##Step 1: Set up a HelloWorld Component
 Before I ever start a React app I always create a HelloWorld component just to make sure that I've tied everything together properly. I don't expect you to have all this memorized, but do your best in using proper documentation to wire up everything. If you do get stuck you can refer to the 'step1' branch.
@@ -23,6 +28,7 @@ Before I ever start a React app I always create a HelloWorld component just to m
  * Create and configure your webpack.config.js file
  * In your app directory create and configure your index.html file
  * In your app directory create and configure your index.js file to render a HelloWorld component
+<<<<<<< HEAD
  * Start webpack and make sure everything is working
 
 ##Step 2: Let React Router handle Routing
@@ -104,3 +110,6 @@ The final /detail route should now look like this.
 If you got through this, great job. Take a look at my code and compare to what we did differently.
 
 <img src='http://www.reactjsprogram.com/images/tyler-mcginnis.png' width="100px" align="right"/> Suggestion or just want to say thanks? You can find me on Twitter at [@tylermcginnis33](http://twitter.com/tylermcginnis33)
+=======
+ * Start webpack and make sure everything is working
+>>>>>>> step1
