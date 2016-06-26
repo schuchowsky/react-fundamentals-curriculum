@@ -15,7 +15,6 @@ var SearchFormContainer= React.createClass({
   render: function(){
     return (
       <SearchWeatherForm
-        onSubmitForm={this.handleSubmitForm}
         onUpdateCity={this.handleUpdateCity}
         city={this.state.city}
         orientation={this.props.orientation} />

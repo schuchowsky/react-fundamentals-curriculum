@@ -9,19 +9,20 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    margin: 35
+    margin: 35,
+    cursor: 'pointer'
   },
   image: {
     height: 130
   }
 }
 
-function WeatherDayWidget({day}) {
+function WeatherDayWidget({day, onClick}) {
   return (
-    <div style={styles.widget}>
+    <div style={styles.widget} onClick={onClick(day)}>
       <img style={styles.image} src={`./app/images/weather-icons/${day.weather[0].icon}.svg`}/>
       <h3>
-        <IntlProvider>
+        <IntlProvider locale="en">
           <FormattedDate value={new Date(day.dt * 1000)} day="numeric" month="long" year="numeric"  />
         </IntlProvider>
       </h3>

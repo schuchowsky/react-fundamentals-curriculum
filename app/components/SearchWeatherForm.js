@@ -35,8 +35,7 @@ function SearchWeatherForm({onSubmitForm, onUpdateCity, city, flexDirection}) {
 }
 
 SearchWeatherForm.propTypes = {
-  orientation: PropTypes.oneOf(['vertical','horizontal']).isRequired,
-  onSubmitForm: PropTypes.func.isRequired,
+  orientation: PropTypes.oneOf(['vertical','horizontal']).isRequired,  
   onUpdateCity: PropTypes.func.isRequired
 }
 

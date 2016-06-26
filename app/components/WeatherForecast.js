@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-function WeatherDetails({ details }){
+function WeatherForecast({ details, onDayClick }){
   return !details
     ? <p>Carregando...</p>
     : <div>
@@ -22,9 +22,11 @@ function WeatherDetails({ details }){
         <h3>Selecione um dos dias abaixo</h3>
       </div>
       <div style={styles.days}>
-        {details.forecast5days.map(day => <WeatherDayWidget key={day.dt} day={day}> ></WeatherDayWidget> )}
+        {details.forecast5days.map(
+          day => <WeatherDayWidget key={day.dt} day={day} onClick={onDayClick}/>
+        )}
       </div>
     </div>
 }
 
- module.exports = WeatherDetails;
+ module.exports = WeatherForecast;

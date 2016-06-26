@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 var SearchWeatherContainer = require('../containers/SearchWeatherContainer');
 
 const styles = {
@@ -16,7 +17,9 @@ const styles = {
 function Header(){
   return (
     <div style={styles.container}>
-      <h2>Consulta de clima</h2>
+      <Link to='/'>
+        <h2>Consulta de clima</h2>
+      </Link>
       <SearchWeatherContainer orientation='vertical' />
     </div>
 
