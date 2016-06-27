@@ -4,7 +4,7 @@ var SearchWeatherForm = require('../components/SearchWeatherForm');
 var SearchFormContainer= React.createClass({
   getInitialState: function() {
     return {
-      city: 'Foz do Iguaçu, Paraná'
+      city: ''
     }
   },
   handleUpdateCity: function(event){

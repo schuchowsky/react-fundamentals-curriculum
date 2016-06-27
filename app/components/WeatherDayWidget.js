@@ -17,9 +17,9 @@ const styles = {
   }
 }
 
-function WeatherDayWidget({day, onClick}) {
+function WeatherDayWidget({day, onDayClick}) {
   return (
-    <div style={styles.widget} onClick={onClick(day)}>
+    <div style={styles.widget} onClick={onDayClick}>
       <img style={styles.image} src={`./app/images/weather-icons/${day.weather[0].icon}.svg`}/>
       <h3>
         <IntlProvider locale="en">

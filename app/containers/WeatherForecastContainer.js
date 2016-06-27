@@ -7,16 +7,13 @@ var WeatherForecastContainer = React.createClass({
     router: React.PropTypes.object.isRequired
   },
   getInitialState: function(){
-    console.log(this.props.routeParams);
     return {
       weatherDetails: null,
       loading: true,
       city: this.props.routeParams.city
     }
   },
-  handleDayClick: function(e, day){
-    event.preventDefault();
-    console.log('DAY CLICK', day);
+  handleDayClick: function(day){    
     this.context.router.push({
       pathname: `details/${this.state.city}`,
       state: {

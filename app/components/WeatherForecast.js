@@ -19,11 +19,11 @@ function WeatherForecast({ details, onDayClick }){
     : <div>
       <div className='text-center'>
         <h1>{details.currentWeather.name}</h1>
-        <h3>Selecione um dos dias abaixo</h3>
+        <h3>Selecione um dos dias abaixo para ver mais detalhes</h3>
       </div>
       <div style={styles.days}>
         {details.forecast5days.map(
-          day => <WeatherDayWidget key={day.dt} day={day} onClick={onDayClick}/>
+          day => <WeatherDayWidget key={day.dt} day={day} onDayClick={onDayClick.bind(null, day)} />
         )}
       </div>
     </div>

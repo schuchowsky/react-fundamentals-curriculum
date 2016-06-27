@@ -11,13 +11,17 @@ const styles = {
     color: '#fff',
     padding: '5px'
   },
+  homeLink: {
+    color: '#fff',
+    textDecoration: 'none'
+  }
 
 }
 
 function Header(){
   return (
     <div style={styles.container}>
-      <Link to='/'>
+      <Link to='/' style={styles.homeLink}>
         <h2>Consulta de clima</h2>
       </Link>
       <SearchWeatherContainer orientation='vertical' />
